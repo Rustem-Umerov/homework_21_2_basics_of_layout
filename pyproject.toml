@@ -14,3 +14,13 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^26.3.1"
+flake8 = "^7.3.0"
+isort = "^8.0.1"
+mypy = "^1.19.1"
+
+[tool.black]
+line-length = 119
+target-version = ["py313"]
